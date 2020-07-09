@@ -25,6 +25,7 @@
 		2989F81D24B6D98E00279F04 /* TearGas.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2989F81C24B6D98E00279F04 /* TearGas.txt */; };
 		2989F81F24B7022D00279F04 /* BeforeCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2989F81E24B7022D00279F04 /* BeforeCollectionViewController.swift */; };
 		2989F82224B703D900279F04 /* InfoPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2989F82124B703D900279F04 /* InfoPage.swift */; };
+		2989F82424B78A5600279F04 /* BeforeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2989F82324B78A5600279F04 /* BeforeCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		2989F81C24B6D98E00279F04 /* TearGas.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = TearGas.txt; sourceTree = "<group>"; };
 		2989F81E24B7022D00279F04 /* BeforeCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeforeCollectionViewController.swift; sourceTree = "<group>"; };
 		2989F82124B703D900279F04 /* InfoPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoPage.swift; sourceTree = "<group>"; };
+		2989F82324B78A5600279F04 /* BeforeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeforeCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,8 +124,8 @@
 				2989F80E24B6D7B200279F04 /* Resources */,
 				2989F82024B703BE00279F04 /* Models */,
 				2989F80D24B6D79900279F04 /* Views */,
-				2989F80C24B6D77400279F04 /* Delegates */,
 				2989F80B24B6D72800279F04 /* Controllers */,
+				2989F80C24B6D77400279F04 /* Delegates */,
 				2978A24D24A1D7DC00FB5231 /* Assets.xcassets */,
 				2978A25224A1D7DD00FB5231 /* Info.plist */,
 				2978A24A24A1D7DA00FB5231 /* HowToSurviveThePolice.xcdatamodeld */,
@@ -155,6 +157,7 @@
 				2978A24324A1D7DA00FB5231 /* FirstViewController.swift */,
 				2978A24524A1D7DA00FB5231 /* SecondViewController.swift */,
 				2989F81E24B7022D00279F04 /* BeforeCollectionViewController.swift */,
+				2989F82324B78A5600279F04 /* BeforeCollectionViewCell.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -362,6 +365,7 @@
 				2989F82224B703D900279F04 /* InfoPage.swift in Sources */,
 				2978A24624A1D7DA00FB5231 /* SecondViewController.swift in Sources */,
 				2978A24424A1D7DA00FB5231 /* FirstViewController.swift in Sources */,
+				2989F82424B78A5600279F04 /* BeforeCollectionViewCell.swift in Sources */,
 				2978A24024A1D7DA00FB5231 /* AppDelegate.swift in Sources */,
 				2978A24224A1D7DA00FB5231 /* SceneDelegate.swift in Sources */,
 				2978A24C24A1D7DA00FB5231 /* HowToSurviveThePolice.xcdatamodeld in Sources */,

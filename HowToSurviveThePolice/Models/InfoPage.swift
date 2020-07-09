@@ -22,7 +22,7 @@ struct InfoPage {
 }
 
 // all pages init here
-let before: [InfoPage] = [
+let beforePages: [InfoPage] = [
     InfoPage(title: "Find a Protest", icon: nil, textFileName: "Before/FindAProtest"),
     InfoPage(title: "What to Bring", icon: nil, textFileName: "Before/WhatToBring"),
     InfoPage(title: "What to Wear", icon: nil, textFileName: "Before/WhatToWear")
