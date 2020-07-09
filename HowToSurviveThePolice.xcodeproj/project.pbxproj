@@ -17,6 +17,12 @@
 		2978A25124A1D7DC00FB5231 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2978A24F24A1D7DC00FB5231 /* LaunchScreen.storyboard */; };
 		2978A25C24A1D7DD00FB5231 /* HowToSurviveThePoliceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2978A25B24A1D7DD00FB5231 /* HowToSurviveThePoliceTests.swift */; };
 		2978A26724A1D7DD00FB5231 /* HowToSurviveThePoliceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2978A26624A1D7DD00FB5231 /* HowToSurviveThePoliceUITests.swift */; };
+		2989F81324B6D8CD00279F04 /* WhatToBring.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2989F81224B6D8CD00279F04 /* WhatToBring.txt */; };
+		2989F81524B6D90100279F04 /* FindAProtest.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2989F81424B6D90100279F04 /* FindAProtest.txt */; };
+		2989F81724B6D92400279F04 /* WhatToWear.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2989F81624B6D92400279F04 /* WhatToWear.txt */; };
+		2989F81924B6D95E00279F04 /* Mace.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2989F81824B6D95E00279F04 /* Mace.txt */; };
+		2989F81B24B6D97400279F04 /* RubberBullets.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2989F81A24B6D97400279F04 /* RubberBullets.txt */; };
+		2989F81D24B6D98E00279F04 /* TearGas.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2989F81C24B6D98E00279F04 /* TearGas.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +59,12 @@
 		2978A26224A1D7DD00FB5231 /* HowToSurviveThePoliceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HowToSurviveThePoliceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2978A26624A1D7DD00FB5231 /* HowToSurviveThePoliceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowToSurviveThePoliceUITests.swift; sourceTree = "<group>"; };
 		2978A26824A1D7DD00FB5231 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2989F81224B6D8CD00279F04 /* WhatToBring.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = WhatToBring.txt; sourceTree = "<group>"; };
+		2989F81424B6D90100279F04 /* FindAProtest.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = FindAProtest.txt; sourceTree = "<group>"; };
+		2989F81624B6D92400279F04 /* WhatToWear.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = WhatToWear.txt; sourceTree = "<group>"; };
+		2989F81824B6D95E00279F04 /* Mace.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Mace.txt; sourceTree = "<group>"; };
+		2989F81A24B6D97400279F04 /* RubberBullets.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = RubberBullets.txt; sourceTree = "<group>"; };
+		2989F81C24B6D98E00279F04 /* TearGas.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = TearGas.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,8 +182,30 @@
 		2989F80F24B6D7C300279F04 /* Text */ = {
 			isa = PBXGroup;
 			children = (
+				2989F81024B6D84200279F04 /* Before */,
+				2989F81124B6D87600279F04 /* During */,
 			);
 			path = Text;
+			sourceTree = "<group>";
+		};
+		2989F81024B6D84200279F04 /* Before */ = {
+			isa = PBXGroup;
+			children = (
+				2989F81424B6D90100279F04 /* FindAProtest.txt */,
+				2989F81224B6D8CD00279F04 /* WhatToBring.txt */,
+				2989F81624B6D92400279F04 /* WhatToWear.txt */,
+			);
+			path = Before;
+			sourceTree = "<group>";
+		};
+		2989F81124B6D87600279F04 /* During */ = {
+			isa = PBXGroup;
+			children = (
+				2989F81824B6D95E00279F04 /* Mace.txt */,
+				2989F81A24B6D97400279F04 /* RubberBullets.txt */,
+				2989F81C24B6D98E00279F04 /* TearGas.txt */,
+			);
+			path = During;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -278,9 +312,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2989F81524B6D90100279F04 /* FindAProtest.txt in Resources */,
 				2978A25124A1D7DC00FB5231 /* LaunchScreen.storyboard in Resources */,
 				2978A24E24A1D7DC00FB5231 /* Assets.xcassets in Resources */,
+				2989F81324B6D8CD00279F04 /* WhatToBring.txt in Resources */,
+				2989F81D24B6D98E00279F04 /* TearGas.txt in Resources */,
+				2989F81B24B6D97400279F04 /* RubberBullets.txt in Resources */,
+				2989F81724B6D92400279F04 /* WhatToWear.txt in Resources */,
 				2978A24924A1D7DA00FB5231 /* Main.storyboard in Resources */,
+				2989F81924B6D95E00279F04 /* Mace.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
