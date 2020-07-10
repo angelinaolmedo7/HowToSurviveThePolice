@@ -76,7 +76,9 @@ class BeforeCollectionViewController: UICollectionViewController {
     }
     
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print("select")
+        let newPageViewController = InfoPageViewController()
+        newPageViewController.page = beforePages[indexPath.row]
+        self.present(newPageViewController, animated: true, completion: nil)
     }
 
     /*

@@ -13,14 +13,17 @@ class InfoPageViewController: UIViewController {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var bodyTextLabel: UILabel!
     
+    var page: InfoPage!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        self.setDetails(page: page)
     }
     
     func setDetails(page: InfoPage) {
-        self.titleLabel.text = page.title
+        self.titleLabel.text =  page.title
         self.bodyTextLabel.text = page.textFileName
     }
 
