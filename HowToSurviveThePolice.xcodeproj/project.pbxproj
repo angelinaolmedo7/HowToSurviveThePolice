@@ -27,6 +27,8 @@
 		2989F82224B703D900279F04 /* InfoPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2989F82124B703D900279F04 /* InfoPage.swift */; };
 		2989F82424B78A5600279F04 /* BeforeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2989F82324B78A5600279F04 /* BeforeCollectionViewCell.swift */; };
 		2989F82F24B870C200279F04 /* DuringCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2989F82E24B870C200279F04 /* DuringCollectionViewController.swift */; };
+		2989F83224B89C8000279F04 /* InfoPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2989F83024B89C8000279F04 /* InfoPageViewController.swift */; };
+		2989F83324B89C8000279F04 /* InfoPageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2989F83124B89C8000279F04 /* InfoPageViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +75,8 @@
 		2989F82124B703D900279F04 /* InfoPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoPage.swift; sourceTree = "<group>"; };
 		2989F82324B78A5600279F04 /* BeforeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeforeCollectionViewCell.swift; sourceTree = "<group>"; };
 		2989F82E24B870C200279F04 /* DuringCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DuringCollectionViewController.swift; sourceTree = "<group>"; };
+		2989F83024B89C8000279F04 /* InfoPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoPageViewController.swift; sourceTree = "<group>"; };
+		2989F83124B89C8000279F04 /* InfoPageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InfoPageViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +163,8 @@
 				2978A24324A1D7DA00FB5231 /* FirstViewController.swift */,
 				2978A24524A1D7DA00FB5231 /* SecondViewController.swift */,
 				2989F81E24B7022D00279F04 /* BeforeCollectionViewController.swift */,
+				2989F83024B89C8000279F04 /* InfoPageViewController.swift */,
+				2989F83124B89C8000279F04 /* InfoPageViewController.xib */,
 				2989F82E24B870C200279F04 /* DuringCollectionViewController.swift */,
 				2989F82324B78A5600279F04 /* BeforeCollectionViewCell.swift */,
 			);
@@ -333,6 +339,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2989F81524B6D90100279F04 /* FindAProtest.txt in Resources */,
+				2989F83324B89C8000279F04 /* InfoPageViewController.xib in Resources */,
 				2978A25124A1D7DC00FB5231 /* LaunchScreen.storyboard in Resources */,
 				2978A24E24A1D7DC00FB5231 /* Assets.xcassets in Resources */,
 				2989F81324B6D8CD00279F04 /* WhatToBring.txt in Resources */,
@@ -368,6 +375,7 @@
 				2989F82224B703D900279F04 /* InfoPage.swift in Sources */,
 				2978A24624A1D7DA00FB5231 /* SecondViewController.swift in Sources */,
 				2978A24424A1D7DA00FB5231 /* FirstViewController.swift in Sources */,
+				2989F83224B89C8000279F04 /* InfoPageViewController.swift in Sources */,
 				2989F82F24B870C200279F04 /* DuringCollectionViewController.swift in Sources */,
 				2989F82424B78A5600279F04 /* BeforeCollectionViewCell.swift in Sources */,
 				2978A24024A1D7DA00FB5231 /* AppDelegate.swift in Sources */,
