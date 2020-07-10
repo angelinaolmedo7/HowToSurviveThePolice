@@ -27,3 +27,8 @@ let beforePages: [InfoPage] = [
     InfoPage(title: "What to Bring", icon: nil, textFileName: "Before/WhatToBring"),
     InfoPage(title: "What to Wear", icon: nil, textFileName: "Before/WhatToWear")
 ]
+let duringPages: [InfoPage] = [
+    InfoPage(title: "Mace", icon: nil, textFileName: "During/Mace"),
+    InfoPage(title: "Rubber Bullets", icon: nil, textFileName: "During/RubberBullets"),
+    InfoPage(title: "Tear Gas", icon: nil, textFileName: "During/TearGas")
+]
