@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		2978A24024A1D7DA00FB5231 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2978A23F24A1D7DA00FB5231 /* AppDelegate.swift */; };
 		2978A24224A1D7DA00FB5231 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2978A24124A1D7DA00FB5231 /* SceneDelegate.swift */; };
-		2978A24424A1D7DA00FB5231 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2978A24324A1D7DA00FB5231 /* FirstViewController.swift */; };
-		2978A24624A1D7DA00FB5231 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2978A24524A1D7DA00FB5231 /* SecondViewController.swift */; };
 		2978A24924A1D7DA00FB5231 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2978A24724A1D7DA00FB5231 /* Main.storyboard */; };
 		2978A24C24A1D7DA00FB5231 /* HowToSurviveThePolice.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2978A24A24A1D7DA00FB5231 /* HowToSurviveThePolice.xcdatamodeld */; };
 		2978A24E24A1D7DC00FB5231 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2978A24D24A1D7DC00FB5231 /* Assets.xcassets */; };
@@ -52,8 +50,6 @@
 		2978A23C24A1D7DA00FB5231 /* HowToSurviveThePolice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HowToSurviveThePolice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2978A23F24A1D7DA00FB5231 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2978A24124A1D7DA00FB5231 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2978A24324A1D7DA00FB5231 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		2978A24524A1D7DA00FB5231 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		2978A24824A1D7DA00FB5231 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2978A24B24A1D7DA00FB5231 /* HowToSurviveThePolice.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HowToSurviveThePolice.xcdatamodel; sourceTree = "<group>"; };
 		2978A24D24A1D7DC00FB5231 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -160,11 +156,9 @@
 		2989F80B24B6D72800279F04 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				2978A24324A1D7DA00FB5231 /* FirstViewController.swift */,
-				2978A24524A1D7DA00FB5231 /* SecondViewController.swift */,
-				2989F81E24B7022D00279F04 /* BeforeCollectionViewController.swift */,
 				2989F83024B89C8000279F04 /* InfoPageViewController.swift */,
 				2989F83124B89C8000279F04 /* InfoPageViewController.xib */,
+				2989F81E24B7022D00279F04 /* BeforeCollectionViewController.swift */,
 				2989F82E24B870C200279F04 /* DuringCollectionViewController.swift */,
 				2989F82324B78A5600279F04 /* BeforeCollectionViewCell.swift */,
 			);
@@ -373,8 +367,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				2989F82224B703D900279F04 /* InfoPage.swift in Sources */,
-				2978A24624A1D7DA00FB5231 /* SecondViewController.swift in Sources */,
-				2978A24424A1D7DA00FB5231 /* FirstViewController.swift in Sources */,
 				2989F83224B89C8000279F04 /* InfoPageViewController.swift in Sources */,
 				2989F82F24B870C200279F04 /* DuringCollectionViewController.swift in Sources */,
 				2989F82424B78A5600279F04 /* BeforeCollectionViewCell.swift in Sources */,
