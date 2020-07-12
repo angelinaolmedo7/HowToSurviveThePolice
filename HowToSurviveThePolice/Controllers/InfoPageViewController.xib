@@ -10,6 +10,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="InfoPageViewController" customModule="HowToSurviveThePolice" customModuleProvider="target">
             <connections>
                 <outlet property="bodyTextLabel" destination="6RD-43-VHh" id="Egm-dF-VLF"/>
+                <outlet property="scrollView" destination="iTI-GL-voe" id="HwH-VK-GlI"/>
                 <outlet property="titleLabel" destination="BeN-lo-aB6" id="Yoc-LX-jMu"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -22,32 +23,44 @@
                 <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iTI-GL-voe">
                     <rect key="frame" x="20" y="64" width="374" height="798"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BeN-lo-aB6">
-                            <rect key="frame" x="0.0" y="0.0" width="374" height="50"/>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jpF-Fp-5pD">
+                            <rect key="frame" x="0.0" y="0.0" width="374" height="70.5"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BodyText" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6RD-43-VHh">
+                                    <rect key="frame" x="0.0" y="50" width="374" height="20.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BeN-lo-aB6">
+                                    <rect key="frame" x="0.0" y="0.0" width="374" height="50"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="50" id="DQe-dz-eiS"/>
+                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="phL-s9-IqJ"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             <constraints>
-                                <constraint firstAttribute="height" constant="50" id="DQe-dz-eiS"/>
+                                <constraint firstAttribute="trailing" secondItem="BeN-lo-aB6" secondAttribute="trailing" id="1bj-tU-GFL"/>
+                                <constraint firstItem="6RD-43-VHh" firstAttribute="leading" secondItem="jpF-Fp-5pD" secondAttribute="leading" id="3AG-hY-07U"/>
+                                <constraint firstItem="BeN-lo-aB6" firstAttribute="leading" secondItem="jpF-Fp-5pD" secondAttribute="leading" id="Exj-KL-lOe"/>
+                                <constraint firstAttribute="bottom" secondItem="6RD-43-VHh" secondAttribute="bottom" id="NpL-52-VUQ"/>
+                                <constraint firstItem="6RD-43-VHh" firstAttribute="top" secondItem="BeN-lo-aB6" secondAttribute="bottom" id="dn7-0k-ozt"/>
+                                <constraint firstItem="BeN-lo-aB6" firstAttribute="top" secondItem="jpF-Fp-5pD" secondAttribute="top" id="eRO-Pp-Qkw"/>
+                                <constraint firstAttribute="trailing" secondItem="6RD-43-VHh" secondAttribute="trailing" id="uSS-Ou-0iD"/>
                             </constraints>
-                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                            <nil key="textColor"/>
-                            <nil key="highlightedColor"/>
-                        </label>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BodyText" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6RD-43-VHh">
-                            <rect key="frame" x="0.0" y="70" width="374" height="728"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                            <nil key="textColor"/>
-                            <nil key="highlightedColor"/>
-                        </label>
+                        </view>
                     </subviews>
                     <constraints>
-                        <constraint firstItem="Uh3-uu-kWb" firstAttribute="trailing" secondItem="6RD-43-VHh" secondAttribute="trailing" id="5fB-LE-Rt1"/>
-                        <constraint firstItem="BeN-lo-aB6" firstAttribute="leading" secondItem="Uh3-uu-kWb" secondAttribute="leading" id="DME-lo-IjW"/>
-                        <constraint firstItem="6RD-43-VHh" firstAttribute="bottom" secondItem="iTI-GL-voe" secondAttribute="bottomMargin" id="L7G-nJ-LOX"/>
-                        <constraint firstItem="Uh3-uu-kWb" firstAttribute="bottom" secondItem="6RD-43-VHh" secondAttribute="bottom" id="OEn-O4-ytq"/>
-                        <constraint firstItem="BeN-lo-aB6" firstAttribute="top" secondItem="Uh3-uu-kWb" secondAttribute="top" id="VJm-9D-FDj"/>
-                        <constraint firstItem="6RD-43-VHh" firstAttribute="leading" secondItem="Uh3-uu-kWb" secondAttribute="leading" id="XXV-3E-Wef"/>
-                        <constraint firstItem="6RD-43-VHh" firstAttribute="top" secondItem="BeN-lo-aB6" secondAttribute="bottom" constant="20" id="iBC-aI-xd6"/>
-                        <constraint firstItem="Uh3-uu-kWb" firstAttribute="trailing" secondItem="BeN-lo-aB6" secondAttribute="trailing" id="rTQ-vE-sV0"/>
-                        <constraint firstAttribute="trailing" secondItem="BeN-lo-aB6" secondAttribute="trailing" id="wnp-a1-IFu"/>
+                        <constraint firstAttribute="bottom" secondItem="jpF-Fp-5pD" secondAttribute="bottom" id="EQK-DN-bea"/>
+                        <constraint firstItem="jpF-Fp-5pD" firstAttribute="width" secondItem="iTI-GL-voe" secondAttribute="width" id="S3Y-4I-30E"/>
+                        <constraint firstItem="jpF-Fp-5pD" firstAttribute="leading" secondItem="iTI-GL-voe" secondAttribute="leading" id="VRL-zX-Lg6"/>
+                        <constraint firstItem="jpF-Fp-5pD" firstAttribute="top" secondItem="iTI-GL-voe" secondAttribute="top" id="glg-Sv-LRk"/>
+                        <constraint firstAttribute="trailing" secondItem="jpF-Fp-5pD" secondAttribute="trailing" id="uFr-Fv-1Cc"/>
                     </constraints>
                     <viewLayoutGuide key="contentLayoutGuide" id="mX4-AA-7J7"/>
                     <viewLayoutGuide key="frameLayoutGuide" id="Uh3-uu-kWb"/>

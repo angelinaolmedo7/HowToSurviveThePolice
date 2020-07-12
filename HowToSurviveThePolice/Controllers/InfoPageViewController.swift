@@ -10,6 +10,7 @@ import UIKit
 
 class InfoPageViewController: UIViewController {
 
+    @IBOutlet weak var scrollView: UIScrollView! // linked for debugging
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var bodyTextLabel: UILabel!
     
@@ -20,6 +21,7 @@ class InfoPageViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         self.setDetails(page: page)
+
     }
     
     func setDetails(page: InfoPage) {
