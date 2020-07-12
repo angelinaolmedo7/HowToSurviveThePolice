@@ -17,18 +17,18 @@ struct InfoPage {
     init(title: String, icon: UIImage?, textFileName: String) {
         self.title = title
         self.icon = icon
-        self.textFileName = "Resources/Text/\(textFileName).txt"
+        self.textFileName = textFileName
     }
 }
 
 // all pages init here
 let beforePages: [InfoPage] = [
-    InfoPage(title: "Find a Protest", icon: nil, textFileName: "Before/FindAProtest"),
-    InfoPage(title: "What to Bring", icon: nil, textFileName: "Before/WhatToBring"),
-    InfoPage(title: "What to Wear", icon: nil, textFileName: "Before/WhatToWear")
+    InfoPage(title: "Find a Protest", icon: nil, textFileName: "FindAProtest"),
+    InfoPage(title: "What to Bring", icon: nil, textFileName: "WhatToBring"),
+    InfoPage(title: "What to Wear", icon: nil, textFileName: "WhatToWear")
 ]
 let duringPages: [InfoPage] = [
-    InfoPage(title: "Mace", icon: nil, textFileName: "During/Mace"),
-    InfoPage(title: "Rubber Bullets", icon: nil, textFileName: "During/RubberBullets"),
-    InfoPage(title: "Tear Gas", icon: nil, textFileName: "During/TearGas")
+    InfoPage(title: "Mace", icon: nil, textFileName: "Mace"),
+    InfoPage(title: "Rubber Bullets", icon: nil, textFileName: "RubberBullets"),
+    InfoPage(title: "Tear Gas", icon: nil, textFileName: "TearGas")
 ]

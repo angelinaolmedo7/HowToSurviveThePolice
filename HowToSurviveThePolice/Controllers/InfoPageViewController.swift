@@ -24,10 +24,25 @@ class InfoPageViewController: UIViewController {
     
     func setDetails(page: InfoPage) {
         self.titleLabel.text =  page.title
-        self.bodyTextLabel.text = page.textFileName
+        self.bodyTextLabel.text = getText(page.textFileName)
     }
 
-
+    func getText(_ textFileName: String) -> String {
+        var text: String = "ERROR" // should be overwritten
+        
+        if let filepath = Bundle.main.path(forResource: textFileName, ofType: "txt") {
+            do {
+                text = try String(contentsOfFile: filepath)
+            } catch {
+                print("Read the file bad for \(textFileName)")
+            }
+        } else {
+            print("Couldn't find file \(textFileName)")
+        }
+        
+        return text
+    }
+    
     /*
     // MARK: - Navigation
 
