@@ -74,6 +74,12 @@ class DuringCollectionViewController: UICollectionViewController {
     override func collectionView(_ collectionView: UICollectionView, shouldSelectItemAt indexPath: IndexPath) -> Bool {
         return true
     }
+    
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let newPageViewController = InfoPageViewController()
+        newPageViewController.page = duringPages[indexPath.row]
+        self.present(newPageViewController, animated: true, completion: nil)
+    }
 
     /*
     // Uncomment these methods to specify if an action menu should be displayed for the specified item, and react to actions performed on the item
