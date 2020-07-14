@@ -15,6 +15,7 @@
 		2978A25124A1D7DC00FB5231 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2978A24F24A1D7DC00FB5231 /* LaunchScreen.storyboard */; };
 		2978A25C24A1D7DD00FB5231 /* HowToSurviveThePoliceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2978A25B24A1D7DD00FB5231 /* HowToSurviveThePoliceTests.swift */; };
 		2978A26724A1D7DD00FB5231 /* HowToSurviveThePoliceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2978A26624A1D7DD00FB5231 /* HowToSurviveThePoliceUITests.swift */; };
+		2978E18A24BAFF5F00BD3DB0 /* ColorSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2978E18924BAFF5F00BD3DB0 /* ColorSet.swift */; };
 		2989F81324B6D8CD00279F04 /* WhatToBring.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2989F81224B6D8CD00279F04 /* WhatToBring.txt */; };
 		2989F81524B6D90100279F04 /* FindAProtest.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2989F81424B6D90100279F04 /* FindAProtest.txt */; };
 		2989F81724B6D92400279F04 /* WhatToWear.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2989F81624B6D92400279F04 /* WhatToWear.txt */; };
@@ -61,6 +62,7 @@
 		2978A26224A1D7DD00FB5231 /* HowToSurviveThePoliceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HowToSurviveThePoliceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2978A26624A1D7DD00FB5231 /* HowToSurviveThePoliceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowToSurviveThePoliceUITests.swift; sourceTree = "<group>"; };
 		2978A26824A1D7DD00FB5231 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2978E18924BAFF5F00BD3DB0 /* ColorSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSet.swift; sourceTree = "<group>"; };
 		2989F81224B6D8CD00279F04 /* WhatToBring.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = WhatToBring.txt; sourceTree = "<group>"; };
 		2989F81424B6D90100279F04 /* FindAProtest.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = FindAProtest.txt; sourceTree = "<group>"; };
 		2989F81624B6D92400279F04 /* WhatToWear.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = WhatToWear.txt; sourceTree = "<group>"; };
@@ -224,6 +226,7 @@
 			isa = PBXGroup;
 			children = (
 				2989F82124B703D900279F04 /* InfoPage.swift */,
+				2978E18924BAFF5F00BD3DB0 /* ColorSet.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -370,6 +373,7 @@
 				2989F83224B89C8000279F04 /* InfoPageViewController.swift in Sources */,
 				2989F82F24B870C200279F04 /* DuringCollectionViewController.swift in Sources */,
 				2989F82424B78A5600279F04 /* BeforeCollectionViewCell.swift in Sources */,
+				2978E18A24BAFF5F00BD3DB0 /* ColorSet.swift in Sources */,
 				2978A24024A1D7DA00FB5231 /* AppDelegate.swift in Sources */,
 				2978A24224A1D7DA00FB5231 /* SceneDelegate.swift in Sources */,
 				2978A24C24A1D7DA00FB5231 /* HowToSurviveThePolice.xcdatamodeld in Sources */,
