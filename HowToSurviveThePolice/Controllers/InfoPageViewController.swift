@@ -23,22 +23,22 @@ class InfoPageViewController: UIViewController {
     
     func setDetails(page: InfoPage) {
         self.titleLabel.text =  page.title
-        self.bodyTextLabel.text = getText(page.textFileName)
+        self.bodyTextLabel.text = retrieveText(fileName: page.textFileName) // add user.language here
     }
 
-    func getText(_ textFileName: String) -> String {
-        var text: String = "ERROR" // should be overwritten
+    func retrieveText(fileName: String, lang: LanguageOptions = .english) -> String {
+        let fullFileName = "\(fileName)\(lang.rawValue)"
         
-        if let filepath = Bundle.main.path(forResource: textFileName, ofType: "txt") {
+        var text: String = "ERROR" // should be overwritten
+        if let filepath = Bundle.main.path(forResource: fullFileName, ofType: "txt") {
             do {
                 text = try String(contentsOfFile: filepath)
             } catch {
-                print("Read the file bad for \(textFileName)")
+                print("Read the file bad for \(fullFileName)")
             }
         } else {
-            print("Couldn't find file \(textFileName)")
+            print("Couldn't find file \(fullFileName)")
         }
-        
         return text
     }
 
