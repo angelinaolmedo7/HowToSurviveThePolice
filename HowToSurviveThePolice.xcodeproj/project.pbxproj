@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		290D555124BEC72A00867299 /* FindAProtest-Spanish in Resources */ = {isa = PBXBuildFile; fileRef = 290D555024BEC72A00867299 /* FindAProtest-Spanish */; };
+		290D555324BEC74900867299 /* WhatToBring-Spanish in Resources */ = {isa = PBXBuildFile; fileRef = 290D555224BEC74900867299 /* WhatToBring-Spanish */; };
+		290D555524BEC7A500867299 /* WhatToWear-Spanish in Resources */ = {isa = PBXBuildFile; fileRef = 290D555424BEC7A500867299 /* WhatToWear-Spanish */; };
 		2978A24024A1D7DA00FB5231 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2978A23F24A1D7DA00FB5231 /* AppDelegate.swift */; };
 		2978A24224A1D7DA00FB5231 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2978A24124A1D7DA00FB5231 /* SceneDelegate.swift */; };
 		2978A24924A1D7DA00FB5231 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2978A24724A1D7DA00FB5231 /* Main.storyboard */; };
@@ -48,6 +51,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		290D555024BEC72A00867299 /* FindAProtest-Spanish */ = {isa = PBXFileReference; lastKnownFileType = text; path = "FindAProtest-Spanish"; sourceTree = "<group>"; };
+		290D555224BEC74900867299 /* WhatToBring-Spanish */ = {isa = PBXFileReference; lastKnownFileType = text; path = "WhatToBring-Spanish"; sourceTree = "<group>"; };
+		290D555424BEC7A500867299 /* WhatToWear-Spanish */ = {isa = PBXFileReference; lastKnownFileType = text; path = "WhatToWear-Spanish"; sourceTree = "<group>"; };
 		2978A23C24A1D7DA00FB5231 /* HowToSurviveThePolice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HowToSurviveThePolice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2978A23F24A1D7DA00FB5231 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2978A24124A1D7DA00FB5231 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -102,6 +108,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		290D554E24BEC6F400867299 /* Translations */ = {
+			isa = PBXGroup;
+			children = (
+				290D554F24BEC70400867299 /* Spanish */,
+			);
+			path = Translations;
+			sourceTree = "<group>";
+		};
+		290D554F24BEC70400867299 /* Spanish */ = {
+			isa = PBXGroup;
+			children = (
+				290D555024BEC72A00867299 /* FindAProtest-Spanish */,
+				290D555224BEC74900867299 /* WhatToBring-Spanish */,
+				290D555424BEC7A500867299 /* WhatToWear-Spanish */,
+			);
+			path = Spanish;
+			sourceTree = "<group>";
+		};
 		2978A23324A1D7DA00FB5231 = {
 			isa = PBXGroup;
 			children = (
@@ -208,6 +232,7 @@
 				2989F81424B6D90100279F04 /* FindAProtest.txt */,
 				2989F81224B6D8CD00279F04 /* WhatToBring.txt */,
 				2989F81624B6D92400279F04 /* WhatToWear.txt */,
+				290D554E24BEC6F400867299 /* Translations */,
 			);
 			path = Before;
 			sourceTree = "<group>";
@@ -336,15 +361,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				2989F81524B6D90100279F04 /* FindAProtest.txt in Resources */,
+				290D555124BEC72A00867299 /* FindAProtest-Spanish in Resources */,
 				2989F83324B89C8000279F04 /* InfoPageViewController.xib in Resources */,
 				2978A25124A1D7DC00FB5231 /* LaunchScreen.storyboard in Resources */,
 				2978A24E24A1D7DC00FB5231 /* Assets.xcassets in Resources */,
 				2989F81324B6D8CD00279F04 /* WhatToBring.txt in Resources */,
 				2989F81D24B6D98E00279F04 /* TearGas.txt in Resources */,
+				290D555524BEC7A500867299 /* WhatToWear-Spanish in Resources */,
 				2989F81B24B6D97400279F04 /* RubberBullets.txt in Resources */,
 				2989F81724B6D92400279F04 /* WhatToWear.txt in Resources */,
 				2978A24924A1D7DA00FB5231 /* Main.storyboard in Resources */,
 				2989F81924B6D95E00279F04 /* Mace.txt in Resources */,
+				290D555324BEC74900867299 /* WhatToBring-Spanish in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
