@@ -86,7 +86,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3384" y="1057"/>
+            <point key="canvasLocation" x="4292.753623188406" y="1056.6964285714284"/>
         </scene>
         <!--Settings-->
         <scene sceneID="vho-qQ-a8H">
@@ -111,7 +111,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6tr-J1-0dT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3955.0724637681164" y="359.59821428571428"/>
+            <point key="canvasLocation" x="4865.217391304348" y="359.59821428571428"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -127,6 +127,7 @@
                     <connections>
                         <segue destination="cZD-HC-7qH" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
                         <segue destination="Juk-mq-5oD" kind="relationship" relationship="viewControllers" id="Guc-Bt-9zK"/>
+                        <segue destination="Lug-f2-bbd" kind="relationship" relationship="viewControllers" id="M9g-9N-jqq"/>
                         <segue destination="pK3-1U-sy9" kind="relationship" relationship="viewControllers" id="Vfx-XB-VVe"/>
                     </connections>
                 </tabBarController>
@@ -196,7 +197,7 @@
         <scene sceneID="a0h-nd-Sih">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="cZD-HC-7qH" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Before" image="clock" catalog="system" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="Before" image="clock.fill" catalog="system" id="acW-dT-cKf"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="5c0-ri-ptS">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -247,7 +248,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ueB-ck-kvK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3044.9275362318845" y="359.59821428571428"/>
+            <point key="canvasLocation" x="3955.0724637681164" y="359.59821428571428"/>
         </scene>
         <!--During the Protest-->
         <scene sceneID="gUe-8Z-zzm">
@@ -305,7 +306,38 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XI8-Vr-rG8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1372" y="995"/>
+            <point key="canvasLocation" x="2281.1594202898555" y="994.41964285714278"/>
+        </scene>
+        <!--Notes-->
+        <scene sceneID="Fg3-e8-1ka">
+            <objects>
+                <tableViewController id="zXd-ub-woQ" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="q5W-cK-6ub">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.14901961389999999" green="0.14901961389999999" blue="0.14901961389999999" alpha="1" colorSpace="deviceRGB"/>
+                        <color key="sectionIndexBackgroundColor" red="0.14901961389999999" green="0.14901961389999999" blue="0.14901961389999999" alpha="1" colorSpace="deviceRGB"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Nqw-lS-hs0">
+                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Nqw-lS-hs0" id="8yu-zz-F2B">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <color key="backgroundColor" red="0.14901961389999999" green="0.14901961389999999" blue="0.14901961389999999" alpha="1" colorSpace="deviceRGB"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="zXd-ub-woQ" id="EUS-48-fF3"/>
+                            <outlet property="delegate" destination="zXd-ub-woQ" id="hqZ-Zp-uRg"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Notes" id="faz-cT-Ynt"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5dX-n8-Tjz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="186.95652173913044" y="982.36607142857133"/>
         </scene>
         <!--During-->
         <scene sceneID="LS9-fv-AO8">
@@ -324,12 +356,32 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gUy-C7-ai2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="604" y="994"/>
+            <point key="canvasLocation" x="1513.0434782608697" y="993.75"/>
+        </scene>
+        <!--Notes-->
+        <scene sceneID="g20-Xc-oIV">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Lug-f2-bbd" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Notes" image="book.fill" catalog="system" id="aIr-iC-SgL"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="cxR-s2-tjN">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="zXd-ub-woQ" kind="relationship" relationship="rootViewController" id="Ng1-ct-Zcs"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Thm-YO-Kc6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-723.1884057971015" y="982.36607142857133"/>
         </scene>
     </scenes>
     <resources>
+        <image name="book.fill" catalog="system" width="64" height="50"/>
         <image name="burst.fill" catalog="system" width="64" height="58"/>
-        <image name="clock" catalog="system" width="64" height="60"/>
+        <image name="clock.fill" catalog="system" width="64" height="60"/>
         <image name="dot.radiowaves.left.and.right" catalog="system" width="64" height="44"/>
         <image name="eye.fill" catalog="system" width="64" height="38"/>
         <image name="gear" catalog="system" width="64" height="58"/>
