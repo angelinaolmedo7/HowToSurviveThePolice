@@ -8,86 +8,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Mace-->
-        <scene sceneID="hNz-n2-bh7">
-            <objects>
-                <viewController id="9pv-A4-QxB" customClass="FirstViewController" customModule="HowToSurviveThePolice" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A5M-7J-77L">
-                                <rect key="frame" x="20" y="64" width="374" height="778"/>
-                                <string key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut posuere malesuada ante eget lacinia. Sed non est maximus, porttitor ligula quis, dapibus sapien. Duis vitae felis aliquet, ultrices metus at, luctus augue. Aliquam eget nulla id est blandit fermentum. Vestibulum maximus pellentesque est, nec venenatis dui. Fusce vehicula, massa viverra vehicula interdum, lorem augue varius odio, ac laoreet nunc diam in tellus. Sed eget porttitor lorem. Aliquam rhoncus iaculis placerat. Donec vel mauris eu est consectetur varius eget tincidunt mauris. Nam laoreet vestibulum tortor vel placerat. Aenean a urna eu urna vulputate semper non id augue. Vivamus volutpat, magna a mattis venenatis, dui dolor accumsan turpis, eget posuere metus turpis vitae magna. Etiam sit amet nulla odio.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="A5M-7J-77L" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" constant="20" id="Ppj-vC-K3q"/>
-                            <constraint firstItem="A5M-7J-77L" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" constant="20" id="Wdk-S3-C8V"/>
-                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="bottom" secondItem="A5M-7J-77L" secondAttribute="bottom" constant="20" id="fgh-i8-BNy"/>
-                            <constraint firstAttribute="trailing" secondItem="A5M-7J-77L" secondAttribute="trailing" constant="20" id="oEb-Pd-txO"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Mace" id="k08-xq-PtS"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2516" y="-972"/>
-        </scene>
-        <!--Tear Gas-->
-        <scene sceneID="GJz-Za-K6O">
-            <objects>
-                <viewController id="rJf-MC-o7N" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="ld2-tG-KAu">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ylk-G9-aXW">
-                                <rect key="frame" x="20" y="126" width="374" height="644"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut posuere malesuada ante eget lacinia. Sed non est maximus, porttitor ligula quis, dapibus sapien. Duis vitae felis aliquet, ultrices metus at, luctus augue. Aliquam eget nulla id est blandit fermentum. Vestibulum maximus pellentesque est, nec venenatis dui. Fusce vehicula, massa viverra vehicula interdum, lorem augue varius odio, ac laoreet nunc diam in tellus. Sed eget porttitor lorem. Aliquam rhoncus iaculis placerat. Donec vel mauris eu est consectetur varius eget tincidunt mauris. Nam laoreet vestibulum tortor vel placerat. Aenean a urna eu urna vulputate semper non id augue. Vivamus volutpat, magna a mattis venenatis, dui dolor accumsan turpis, eget posuere metus turpis vitae magna. Etiam sit amet nulla odio.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6vz-Cm-wjy"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Tear Gas" id="hil-0A-msi"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="fA1-th-16N" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3955.0724637681164" y="-320.08928571428572"/>
-        </scene>
-        <!--Rubber Bullets-->
-        <scene sceneID="wg7-f3-ORb">
-            <objects>
-                <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModule="HowToSurviveThePolice" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="phn-DR-d08">
-                                <rect key="frame" x="20" y="126" width="374" height="644"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut posuere malesuada ante eget lacinia. Sed non est maximus, porttitor ligula quis, dapibus sapien. Duis vitae felis aliquet, ultrices metus at, luctus augue. Aliquam eget nulla id est blandit fermentum. Vestibulum maximus pellentesque est, nec venenatis dui. Fusce vehicula, massa viverra vehicula interdum, lorem augue varius odio, ac laoreet nunc diam in tellus. Sed eget porttitor lorem. Aliquam rhoncus iaculis placerat. Donec vel mauris eu est consectetur varius eget tincidunt mauris. Nam laoreet vestibulum tortor vel placerat. Aenean a urna eu urna vulputate semper non id augue. Vivamus volutpat, magna a mattis venenatis, dui dolor accumsan turpis, eget posuere metus turpis vitae magna. Etiam sit amet nulla odio.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Rubber Bullets" id="y3Z-DS-LdB"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4292.753623188406" y="1056.6964285714284"/>
-        </scene>
         <!--Settings-->
         <scene sceneID="vho-qQ-a8H">
             <objects>
@@ -111,7 +31,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6tr-J1-0dT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4865.217391304348" y="359.59821428571428"/>
+            <point key="canvasLocation" x="2659" y="518"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -191,7 +111,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ydf-T2-B4k" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1489.8550724637682" y="-971.65178571428567"/>
+            <point key="canvasLocation" x="1897" y="-972"/>
         </scene>
         <!--Before-->
         <scene sceneID="a0h-nd-Sih">
@@ -210,26 +130,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DhE-Rm-hKY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="722" y="-972"/>
-        </scene>
-        <!--Tear Gas-->
-        <scene sceneID="REn-7o-KmN">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="lFE-9m-wpu" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Tear Gas" image="eye.fill" catalog="system" id="D55-WZ-86m"/>
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="CKn-8O-JAr">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="rJf-MC-o7N" kind="relationship" relationship="rootViewController" id="8AL-mZ-3th"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="SSW-XC-sYQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3044.9275362318845" y="-320.08928571428572"/>
+            <point key="canvasLocation" x="1129" y="-972"/>
         </scene>
         <!--Settings-->
         <scene sceneID="ZkO-mY-bRw">
@@ -248,7 +149,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ueB-ck-kvK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3955.0724637681164" y="359.59821428571428"/>
+            <point key="canvasLocation" x="1896" y="518"/>
         </scene>
         <!--During the Protest-->
         <scene sceneID="gUe-8Z-zzm">
@@ -306,7 +207,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XI8-Vr-rG8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2281.1594202898555" y="994.41964285714278"/>
+            <point key="canvasLocation" x="3901" y="-972"/>
         </scene>
         <!--Notes-->
         <scene sceneID="Fg3-e8-1ka">
@@ -337,7 +238,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5dX-n8-Tjz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="186.95652173913044" y="982.36607142857133"/>
+            <point key="canvasLocation" x="3568" y="-218"/>
         </scene>
         <!--During-->
         <scene sceneID="LS9-fv-AO8">
@@ -356,7 +257,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gUy-C7-ai2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1513.0434782608697" y="993.75"/>
+            <point key="canvasLocation" x="3145" y="-972"/>
         </scene>
         <!--Notes-->
         <scene sceneID="g20-Xc-oIV">
@@ -375,7 +276,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Thm-YO-Kc6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-723.1884057971015" y="982.36607142857133"/>
+            <point key="canvasLocation" x="2658" y="-218"/>
         </scene>
     </scenes>
     <resources>
@@ -383,7 +284,6 @@
         <image name="burst.fill" catalog="system" width="64" height="58"/>
         <image name="clock.fill" catalog="system" width="64" height="60"/>
         <image name="dot.radiowaves.left.and.right" catalog="system" width="64" height="44"/>
-        <image name="eye.fill" catalog="system" width="64" height="38"/>
         <image name="gear" catalog="system" width="64" height="58"/>
         <image name="speaker.3" catalog="system" width="64" height="44"/>
     </resources>
