@@ -250,52 +250,6 @@
             </objects>
             <point key="canvasLocation" x="3901" y="-972"/>
         </scene>
-        <!--Notes-->
-        <scene sceneID="Fg3-e8-1ka">
-            <objects>
-                <tableViewController id="zXd-ub-woQ" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="q5W-cK-6ub">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.14901961389999999" green="0.14901961389999999" blue="0.14901961389999999" alpha="1" colorSpace="deviceRGB"/>
-                        <color key="sectionIndexBackgroundColor" red="0.14901961389999999" green="0.14901961389999999" blue="0.14901961389999999" alpha="1" colorSpace="deviceRGB"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Nqw-lS-hs0">
-                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Nqw-lS-hs0" id="8yu-zz-F2B">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <color key="backgroundColor" red="0.14901961389999999" green="0.14901961389999999" blue="0.14901961389999999" alpha="1" colorSpace="deviceRGB"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="zXd-ub-woQ" id="EUS-48-fF3"/>
-                            <outlet property="delegate" destination="zXd-ub-woQ" id="hqZ-Zp-uRg"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="Notes" id="faz-cT-Ynt"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="5dX-n8-Tjz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3568" y="-218"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="odi-n8-AeD">
-            <objects>
-                <viewController id="XTY-Wf-vbv" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="YC5-eK-41R">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="Dhx-ZC-Uff"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="yiP-p5-6dP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4477" y="-218"/>
-        </scene>
         <!--During-->
         <scene sceneID="LS9-fv-AO8">
             <objects>
@@ -327,12 +281,53 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="zXd-ub-woQ" kind="relationship" relationship="rootViewController" id="Ng1-ct-Zcs"/>
+                        <segue destination="UEi-ly-VvW" kind="relationship" relationship="rootViewController" id="PJ6-tv-xuR"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Thm-YO-Kc6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2658" y="-218"/>
+        </scene>
+        <!--Notes-->
+        <scene sceneID="kte-7H-ZBo">
+            <objects>
+                <viewController id="UEi-ly-VvW" customClass="NotesViewController" customModule="HowToSurviveThePolice" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ee4-1G-gwd">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Type anything here" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="qeV-MX-JQL">
+                                <rect key="frame" x="20" y="108" width="374" height="685"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.14901961389999999" green="0.14901961389999999" blue="0.14901961389999999" alpha="1" colorSpace="deviceRGB"/>
+                        <constraints>
+                            <constraint firstItem="qeV-MX-JQL" firstAttribute="leading" secondItem="mM9-cf-PZ0" secondAttribute="leading" constant="20" id="1lz-l5-b8A"/>
+                            <constraint firstItem="qeV-MX-JQL" firstAttribute="top" secondItem="mM9-cf-PZ0" secondAttribute="top" constant="20" id="7FM-pg-3kG"/>
+                            <constraint firstItem="mM9-cf-PZ0" firstAttribute="trailing" secondItem="qeV-MX-JQL" secondAttribute="trailing" constant="20" id="LdZ-ke-hU2"/>
+                            <constraint firstItem="mM9-cf-PZ0" firstAttribute="bottom" secondItem="qeV-MX-JQL" secondAttribute="bottom" constant="20" id="ryR-DL-hfr"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="mM9-cf-PZ0"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Notes" id="0JK-tP-nqp">
+                        <barButtonItem key="rightBarButtonItem" title="Save" id="7jI-Lo-cuo">
+                            <connections>
+                                <action selector="saveTextPressed:" destination="UEi-ly-VvW" id="1m2-Pj-AlY"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="notesTextView" destination="qeV-MX-JQL" id="rgr-Zv-OYc"/>
+                        <outlet property="saveTextButton" destination="7jI-Lo-cuo" id="dhi-uH-KcK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ycl-G1-W6m" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3586" y="-218"/>
         </scene>
     </scenes>
     <resources>

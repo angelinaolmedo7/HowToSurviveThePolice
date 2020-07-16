@@ -33,6 +33,7 @@
 		2989F83224B89C8000279F04 /* InfoPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2989F83024B89C8000279F04 /* InfoPageViewController.swift */; };
 		2989F83324B89C8000279F04 /* InfoPageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2989F83124B89C8000279F04 /* InfoPageViewController.xib */; };
 		29F34A3C24C08398003641AA /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F34A3B24C08398003641AA /* SettingsViewController.swift */; };
+		29F34A3E24C094BD003641AA /* NotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F34A3D24C094BD003641AA /* NotesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +86,7 @@
 		2989F83024B89C8000279F04 /* InfoPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoPageViewController.swift; sourceTree = "<group>"; };
 		2989F83124B89C8000279F04 /* InfoPageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InfoPageViewController.xib; sourceTree = "<group>"; };
 		29F34A3B24C08398003641AA /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		29F34A3D24C094BD003641AA /* NotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -192,6 +194,7 @@
 				2989F82E24B870C200279F04 /* DuringCollectionViewController.swift */,
 				2989F82324B78A5600279F04 /* BeforeCollectionViewCell.swift */,
 				29F34A3B24C08398003641AA /* SettingsViewController.swift */,
+				29F34A3D24C094BD003641AA /* NotesViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -411,6 +414,7 @@
 				2978E18A24BAFF5F00BD3DB0 /* ColorSet.swift in Sources */,
 				2978A24024A1D7DA00FB5231 /* AppDelegate.swift in Sources */,
 				2978A24224A1D7DA00FB5231 /* SceneDelegate.swift in Sources */,
+				29F34A3E24C094BD003641AA /* NotesViewController.swift in Sources */,
 				290D555724BEC8B600867299 /* LanguageControl.swift in Sources */,
 				2978A24C24A1D7DA00FB5231 /* HowToSurviveThePolice.xcdatamodeld in Sources */,
 				2989F81F24B7022D00279F04 /* BeforeCollectionViewController.swift in Sources */,
