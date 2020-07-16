@@ -9,6 +9,8 @@
 import UIKit
 
 class InfoPageViewController: UIViewController {
+    
+    let defaults = UserDefaults.standard
 
     @IBOutlet weak var scrollView: UIScrollView! // linked for debugging
     @IBOutlet weak var titleLabel: UILabel!
@@ -23,7 +25,9 @@ class InfoPageViewController: UIViewController {
     
     func setDetails(page: InfoPage) {
         self.titleLabel.text =  page.title
-        self.bodyTextLabel.text = retrieveText(fileName: page.textFileName) // add user.language here
+        
+        let savedLang = LanguageOptions(rawValue: defaults.object(forKey: "language") as? String ?? "English")
+        self.bodyTextLabel.text = retrieveText(fileName: page.textFileName, lang: savedLang ?? LanguageOptions.english) 
     }
 
     func retrieveText(fileName: String, lang: LanguageOptions = .english) -> String {

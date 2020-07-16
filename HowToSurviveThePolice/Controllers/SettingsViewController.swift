@@ -11,7 +11,8 @@ import UIKit
 class SettingsViewController: UIViewController {
     
     let defaults = UserDefaults.standard
-
+    @IBOutlet weak var languageControl: UISegmentedControl!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -19,7 +20,18 @@ class SettingsViewController: UIViewController {
     }
     
     @IBAction func languageChanged(_ sender: Any) {
-        print("LANGUAGE")
+        // 0 - English - ""
+        // 1 - Spanish - "-Spanish"
+        var newLanguage: String = "" // should be overwritten if different
+        if languageControl.selectedSegmentIndex == 0 {
+            print("switching language to english")
+        }
+        else {
+            newLanguage = "-Spanish"
+            print("switching language to spanish")
+        }
+        print(newLanguage)
+        defaults.set(newLanguage, forKey: "language")
     }
     
     

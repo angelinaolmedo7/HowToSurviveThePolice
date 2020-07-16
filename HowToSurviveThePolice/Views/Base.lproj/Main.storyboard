@@ -63,6 +63,9 @@
                         <viewLayoutGuide key="safeArea" id="Rxy-rH-aG8"/>
                     </view>
                     <navigationItem key="navigationItem" title="Settings" id="Atn-38-miX"/>
+                    <connections>
+                        <outlet property="languageControl" destination="ytX-IH-Ram" id="b70-Du-J7m"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6tr-J1-0dT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="Kxw-nI-3Pu" userLabel="Exit" sceneMemberID="exit"/>
