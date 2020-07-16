@@ -26,7 +26,7 @@ class InfoPageViewController: UIViewController {
         self.bodyTextLabel.text = retrieveText(fileName: page.textFileName) // add user.language here
     }
 
-    func retrieveText(fileName: String, lang: LanguageOptions = .english) -> String {
+    func retrieveText(fileName: String, lang: LanguageOptions = .spanish) -> String {
         let fullFileName = "\(fileName)\(lang.rawValue)"
         
         var text: String = "ERROR" // should be overwritten
