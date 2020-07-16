@@ -16,5 +16,6 @@ class BeforeCollectionViewCell: UICollectionViewCell {
     func setUpCell(info: InfoPage) {
         self.icon.image = info.icon ?? UIImage.checkmark
         titleLabel.text = info.title
+        titleLabel.isHidden = false
     }
 }

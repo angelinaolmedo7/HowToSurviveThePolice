@@ -16,7 +16,9 @@ struct InfoPage {
     
     init(title: String, icon: UIImage?, textFileName: String) {
         self.title = title
-        self.icon = icon ?? UIImage(named: "icon_\(textFileName)")
+        if let icon = icon ?? UIImage(named: "icon_\(textFileName)") {
+            self.icon = icon.withTintColor(UIColor.systemTeal)
+        } else {print("Couldn't find \(textFileName)")}
         self.textFileName = textFileName
     }
 }
@@ -28,7 +30,7 @@ let beforePages: [InfoPage] = [
     InfoPage(title: "What to Wear", icon: nil, textFileName: "WhatToWear")
 ]
 let duringPages: [InfoPage] = [
-    InfoPage(title: "Mace", icon: UIImage.checkmark, textFileName: "Mace"),
-    InfoPage(title: "Rubber Bullets", icon: UIImage.checkmark, textFileName: "RubberBullets"),
-    InfoPage(title: "Tear Gas", icon: UIImage.checkmark, textFileName: "TearGas")
+    InfoPage(title: "Mace", icon: UIImage(systemName: "dot.radiowaves.left.and.right"), textFileName: "Mace"),
+    InfoPage(title: "Rubber Bullets", icon: UIImage(systemName: "trash.fill"), textFileName: "RubberBullets"),
+    InfoPage(title: "Tear Gas", icon: UIImage(systemName: "cloud.fill"), textFileName: "TearGas")
 ]
