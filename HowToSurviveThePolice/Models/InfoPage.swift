@@ -16,7 +16,7 @@ struct InfoPage {
     
     init(title: String, icon: UIImage?, textFileName: String) {
         self.title = title
-        self.icon = icon
+        self.icon = icon ?? UIImage(named: "icon_\(textFileName)")
         self.textFileName = textFileName
     }
 }
@@ -28,7 +28,7 @@ let beforePages: [InfoPage] = [
     InfoPage(title: "What to Wear", icon: nil, textFileName: "WhatToWear")
 ]
 let duringPages: [InfoPage] = [
-    InfoPage(title: "Mace", icon: nil, textFileName: "Mace"),
-    InfoPage(title: "Rubber Bullets", icon: nil, textFileName: "RubberBullets"),
-    InfoPage(title: "Tear Gas", icon: nil, textFileName: "TearGas")
+    InfoPage(title: "Mace", icon: UIImage.checkmark, textFileName: "Mace"),
+    InfoPage(title: "Rubber Bullets", icon: UIImage.checkmark, textFileName: "RubberBullets"),
+    InfoPage(title: "Tear Gas", icon: UIImage.checkmark, textFileName: "TearGas")
 ]
