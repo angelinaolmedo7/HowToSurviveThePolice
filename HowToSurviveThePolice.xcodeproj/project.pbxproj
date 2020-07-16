@@ -32,6 +32,7 @@
 		2989F82F24B870C200279F04 /* DuringCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2989F82E24B870C200279F04 /* DuringCollectionViewController.swift */; };
 		2989F83224B89C8000279F04 /* InfoPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2989F83024B89C8000279F04 /* InfoPageViewController.swift */; };
 		2989F83324B89C8000279F04 /* InfoPageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2989F83124B89C8000279F04 /* InfoPageViewController.xib */; };
+		29F34A3C24C08398003641AA /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F34A3B24C08398003641AA /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +84,7 @@
 		2989F82E24B870C200279F04 /* DuringCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DuringCollectionViewController.swift; sourceTree = "<group>"; };
 		2989F83024B89C8000279F04 /* InfoPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoPageViewController.swift; sourceTree = "<group>"; };
 		2989F83124B89C8000279F04 /* InfoPageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InfoPageViewController.xib; sourceTree = "<group>"; };
+		29F34A3B24C08398003641AA /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,6 +191,7 @@
 				2989F81E24B7022D00279F04 /* BeforeCollectionViewController.swift */,
 				2989F82E24B870C200279F04 /* DuringCollectionViewController.swift */,
 				2989F82324B78A5600279F04 /* BeforeCollectionViewCell.swift */,
+				29F34A3B24C08398003641AA /* SettingsViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -402,6 +405,7 @@
 			files = (
 				2989F82224B703D900279F04 /* InfoPage.swift in Sources */,
 				2989F83224B89C8000279F04 /* InfoPageViewController.swift in Sources */,
+				29F34A3C24C08398003641AA /* SettingsViewController.swift in Sources */,
 				2989F82F24B870C200279F04 /* DuringCollectionViewController.swift in Sources */,
 				2989F82424B78A5600279F04 /* BeforeCollectionViewCell.swift in Sources */,
 				2978E18A24BAFF5F00BD3DB0 /* ColorSet.swift in Sources */,

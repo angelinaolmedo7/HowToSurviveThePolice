@@ -11,25 +11,61 @@
         <!--Settings-->
         <scene sceneID="vho-qQ-a8H">
             <objects>
-                <viewController id="R8F-Fi-BRV" sceneMemberID="viewController">
+                <viewController id="R8F-Fi-BRV" customClass="SettingsViewController" customModule="HowToSurviveThePolice" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ea9-Jv-WC7">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="we dont have these yet" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="anG-8F-hvf">
-                                <rect key="frame" x="119" y="438" width="177" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Vgd-Il-YrT">
+                                <rect key="frame" x="20" y="108" width="374" height="122.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your language: English" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HPz-eI-0x3">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="ytX-IH-Ram">
+                                        <rect key="frame" x="0.0" y="40.5" width="374" height="32"/>
+                                        <segments>
+                                            <segment title="English"/>
+                                            <segment title="Spanish"/>
+                                        </segments>
+                                        <connections>
+                                            <action selector="languageChanged:" destination="R8F-Fi-BRV" eventType="valueChanged" id="Kok-sW-wEW"/>
+                                            <action selector="languageChanged:" destination="Kxw-nI-3Pu" eventType="valueChanged" id="cgb-xR-hkS"/>
+                                        </connections>
+                                    </segmentedControl>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pVX-t7-19i">
+                                        <rect key="frame" x="0.0" y="91.5" width="374" height="31"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dark Mode" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bfN-DC-8UW">
+                                                <rect key="frame" x="0.0" y="0.0" width="325" height="31"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2c9-sa-UoK">
+                                                <rect key="frame" x="325" y="0.0" width="51" height="31"/>
+                                                <color key="onTintColor" red="0.66678303480000001" green="0.88885515930000003" blue="0.9907494187" alpha="1" colorSpace="deviceRGB"/>
+                                            </switch>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="0.14901961389999999" green="0.14901961389999999" blue="0.14901961389999999" alpha="1" colorSpace="deviceRGB"/>
+                        <constraints>
+                            <constraint firstItem="Vgd-Il-YrT" firstAttribute="leading" secondItem="Rxy-rH-aG8" secondAttribute="leading" constant="20" id="EHj-is-bqa"/>
+                            <constraint firstItem="Rxy-rH-aG8" firstAttribute="trailing" secondItem="Vgd-Il-YrT" secondAttribute="trailing" constant="20" id="y06-ue-D5L"/>
+                            <constraint firstItem="Vgd-Il-YrT" firstAttribute="top" secondItem="Rxy-rH-aG8" secondAttribute="top" constant="20" id="yqd-5X-lp6"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Rxy-rH-aG8"/>
                     </view>
                     <navigationItem key="navigationItem" title="Settings" id="Atn-38-miX"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6tr-J1-0dT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="Kxw-nI-3Pu" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2659" y="518"/>
         </scene>
