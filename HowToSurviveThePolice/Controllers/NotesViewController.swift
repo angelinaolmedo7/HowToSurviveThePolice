@@ -24,11 +24,31 @@ class NotesViewController: UIViewController {
         if notesTextView.text == "" {
             notesTextView.text = "Type anything here"
         }
-        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        let savedLang = LanguageOptions(rawValue: defaults.object(forKey: "language") as? String ?? "English")
+        updatePageLanguage(lang: savedLang ?? LanguageOptions.english)
     }
     
     @IBAction func saveTextPressed(_ sender: Any) {
 //        print("saving text")
         defaults.set(notesTextView.text, forKey: "notes")
     }
+    
+    func updatePageLanguage(lang: LanguageOptions) {
+        switch lang {
+        case .english:
+            if notesTextView.text == "Escribe cualquier cosa aquí" {
+                notesTextView.text = "Type anything here"
+            }
+            self.title = "Notes"
+        case .spanish:
+            if notesTextView.text == "Type anything here" {
+                notesTextView.text = "Escribe cualquier cosa aquí"
+            }
+            self.title = "Notas"
+        }
+    }
+    
 }
