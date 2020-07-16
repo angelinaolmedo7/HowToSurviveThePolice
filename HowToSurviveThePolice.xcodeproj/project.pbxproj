@@ -34,6 +34,9 @@
 		2989F83324B89C8000279F04 /* InfoPageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2989F83124B89C8000279F04 /* InfoPageViewController.xib */; };
 		29F34A3C24C08398003641AA /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F34A3B24C08398003641AA /* SettingsViewController.swift */; };
 		29F34A3E24C094BD003641AA /* NotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F34A3D24C094BD003641AA /* NotesViewController.swift */; };
+		29F34A4224C0A447003641AA /* Mace-Spanish.txt in Resources */ = {isa = PBXBuildFile; fileRef = 29F34A4124C0A447003641AA /* Mace-Spanish.txt */; };
+		29F34A4424C0A45E003641AA /* RubberBullets-Spanish.txt in Resources */ = {isa = PBXBuildFile; fileRef = 29F34A4324C0A45E003641AA /* RubberBullets-Spanish.txt */; };
+		29F34A4624C0A475003641AA /* TearGas-Spanish.txt in Resources */ = {isa = PBXBuildFile; fileRef = 29F34A4524C0A475003641AA /* TearGas-Spanish.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +90,9 @@
 		2989F83124B89C8000279F04 /* InfoPageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InfoPageViewController.xib; sourceTree = "<group>"; };
 		29F34A3B24C08398003641AA /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		29F34A3D24C094BD003641AA /* NotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesViewController.swift; sourceTree = "<group>"; };
+		29F34A4124C0A447003641AA /* Mace-Spanish.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Mace-Spanish.txt"; sourceTree = "<group>"; };
+		29F34A4324C0A45E003641AA /* RubberBullets-Spanish.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "RubberBullets-Spanish.txt"; sourceTree = "<group>"; };
+		29F34A4524C0A475003641AA /* TearGas-Spanish.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "TearGas-Spanish.txt"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -251,6 +257,7 @@
 				2989F81824B6D95E00279F04 /* Mace.txt */,
 				2989F81A24B6D97400279F04 /* RubberBullets.txt */,
 				2989F81C24B6D98E00279F04 /* TearGas.txt */,
+				29F34A3F24C0A413003641AA /* Translations */,
 			);
 			path = During;
 			sourceTree = "<group>";
@@ -263,6 +270,24 @@
 				290D555624BEC8B600867299 /* LanguageControl.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		29F34A3F24C0A413003641AA /* Translations */ = {
+			isa = PBXGroup;
+			children = (
+				29F34A4024C0A41F003641AA /* Spanish */,
+			);
+			path = Translations;
+			sourceTree = "<group>";
+		};
+		29F34A4024C0A41F003641AA /* Spanish */ = {
+			isa = PBXGroup;
+			children = (
+				29F34A4124C0A447003641AA /* Mace-Spanish.txt */,
+				29F34A4324C0A45E003641AA /* RubberBullets-Spanish.txt */,
+				29F34A4524C0A475003641AA /* TearGas-Spanish.txt */,
+			);
+			path = Spanish;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -371,13 +396,16 @@
 			files = (
 				2989F81524B6D90100279F04 /* FindAProtest.txt in Resources */,
 				290D555124BEC72A00867299 /* FindAProtest-Spanish.txt in Resources */,
+				29F34A4424C0A45E003641AA /* RubberBullets-Spanish.txt in Resources */,
 				2989F83324B89C8000279F04 /* InfoPageViewController.xib in Resources */,
 				2978A25124A1D7DC00FB5231 /* LaunchScreen.storyboard in Resources */,
 				2978A24E24A1D7DC00FB5231 /* Assets.xcassets in Resources */,
 				2989F81324B6D8CD00279F04 /* WhatToBring.txt in Resources */,
 				2989F81D24B6D98E00279F04 /* TearGas.txt in Resources */,
 				290D555524BEC7A500867299 /* WhatToWear-Spanish.txt in Resources */,
+				29F34A4624C0A475003641AA /* TearGas-Spanish.txt in Resources */,
 				2989F81B24B6D97400279F04 /* RubberBullets.txt in Resources */,
+				29F34A4224C0A447003641AA /* Mace-Spanish.txt in Resources */,
 				2989F81724B6D92400279F04 /* WhatToWear.txt in Resources */,
 				2978A24924A1D7DA00FB5231 /* Main.storyboard in Resources */,
 				2989F81924B6D95E00279F04 /* Mace.txt in Resources */,
@@ -597,6 +625,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.makeschool.HowToSurviveThePolice;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -615,6 +644,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.makeschool.HowToSurviveThePolice;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
