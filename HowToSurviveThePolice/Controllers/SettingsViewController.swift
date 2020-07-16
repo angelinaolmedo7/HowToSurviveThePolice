@@ -12,11 +12,18 @@ class SettingsViewController: UIViewController {
     
     let defaults = UserDefaults.standard
     @IBOutlet weak var languageControl: UISegmentedControl!
+    @IBOutlet weak var languageLabel: UILabel!
+    @IBOutlet weak var darkModeLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        languageControl.setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.black], for: .selected)
+        languageControl.setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.white], for: .normal)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        let savedLang = LanguageOptions(rawValue: defaults.object(forKey: "language") as? String ?? "English")
+        updatePageLanguage(lang: savedLang ?? LanguageOptions.english)
     }
     
     @IBAction func languageChanged(_ sender: Any) {
@@ -24,25 +31,28 @@ class SettingsViewController: UIViewController {
         // 1 - Spanish - "-Spanish"
         var newLanguage: String = "" // should be overwritten if different
         if languageControl.selectedSegmentIndex == 0 {
-            print("switching language to english")
+//            print("switching language to english")
         }
         else {
             newLanguage = "-Spanish"
-            print("switching language to spanish")
+//            print("switching language to spanish")
         }
-        print(newLanguage)
         defaults.set(newLanguage, forKey: "language")
+        updatePageLanguage(lang: LanguageOptions(rawValue: newLanguage) ?? LanguageOptions.english)
     }
     
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func updatePageLanguage(lang: LanguageOptions) {
+        switch lang {
+        case .english:
+            languageControl.selectedSegmentIndex = 0
+            languageLabel.text = "Your language: English"
+            darkModeLabel.text = "Dark Mode"
+            self.title = "Settings"
+        case .spanish:
+            languageControl.selectedSegmentIndex = 1
+            languageLabel.text = "Tu lenguaje: Español"
+            darkModeLabel.text = "Modo Oscuro"
+            self.title = "Configuración"
+        }
     }
-    */
-
 }

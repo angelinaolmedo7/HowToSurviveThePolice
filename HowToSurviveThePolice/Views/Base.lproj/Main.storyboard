@@ -29,7 +29,7 @@
                                         <rect key="frame" x="0.0" y="40.5" width="374" height="32"/>
                                         <segments>
                                             <segment title="English"/>
-                                            <segment title="Spanish"/>
+                                            <segment title="Español"/>
                                         </segments>
                                         <connections>
                                             <action selector="languageChanged:" destination="R8F-Fi-BRV" eventType="valueChanged" id="Kok-sW-wEW"/>
@@ -64,7 +64,9 @@
                     </view>
                     <navigationItem key="navigationItem" title="Settings" id="Atn-38-miX"/>
                     <connections>
+                        <outlet property="darkModeLabel" destination="bfN-DC-8UW" id="EAt-TQ-ddi"/>
                         <outlet property="languageControl" destination="ytX-IH-Ram" id="b70-Du-J7m"/>
+                        <outlet property="languageLabel" destination="HPz-eI-0x3" id="v57-Kf-Jr4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6tr-J1-0dT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
